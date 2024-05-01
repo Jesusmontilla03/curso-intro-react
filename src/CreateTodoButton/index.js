@@ -1,17 +1,12 @@
 import './CreateTodoButton.css';
 
-function CreateTodoButton() {
+function CreateTodoButton({ setOpenModal }) {
     return (
-        <button className="CreateTodoButton"
-        onClick={
-            (eventico) => {
-                console.log('si funciona')
-                console.log(eventico)
-                console.log(eventico.target)
-            }
-        }
-        >+</button>
-    );
-}
+        <button
+        className="CreateTodoButton"
+        onClick={() => { setOpenModal(state => !state);
+        }}
+        >+</button>);
+    }
 
 export { CreateTodoButton };

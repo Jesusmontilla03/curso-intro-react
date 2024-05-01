@@ -45,7 +45,9 @@ function AppUI() {
                 onDelete={() => deleteTodo(todo.text)} />))}                  
               </TodoList>
               
-          <CreateTodoButton />
+          <CreateTodoButton 
+            setOpenModal={setOpenModal}
+          />
 
         {openModal && (
           <Modal>
