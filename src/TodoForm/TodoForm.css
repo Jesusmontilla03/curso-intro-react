@@ -1,0 +1,54 @@
+* {
+    font-family: 'Montserrat';
+}
+form {
+    width: 380px;
+    height: 310px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    color: #1e1e1f;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+textarea {
+    width: 304px;
+    height: 124px;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #202329;
+    margin-bottom: 12px;
+    box-shadow: 0px 5px 50px rgba(32, 33, 41, 0.25);
+}
+textarea::placeholder {
+    color: #aab4ca;
+}
+textarea:focus {
+    outline-color: #61dafa;
+}
+.TodoForm-buttonContainer {
+    display: flex;
+    gap: 50px;
+}
+.TodoForm-button {
+    border: none;
+    height: 50px;
+    padding: 0 26px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.TodoForm-button--cancel {
+    background: transparent;
+}
+.TodoForm-button--add {
+    background-color: #61dafa;
+    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+}
